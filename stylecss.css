@@ -1,0 +1,444 @@
+/*___________________________________________________________________ELEMENT PRINCIPAUX___________________________________________________________________*/ 
+
+html 
+{
+  font-size: 60%; /* --> Taille du texte de mon HTML*/
+}
+
+body 
+{
+  font-family: 'droid_sansregular', 'Arial', sans-serif; /* --> */
+  color: #455a64; /* --> Couleur de ma page web*/
+  font-size: 1.6rem; /* --> Taille de police de ma page web*/
+    margin: 0;
+}
+
+.blocpage 
+{
+  display: flex; /* --> */
+  flex-direction: row; /* --> */
+} 
+
+.nom, .titre-section 
+{
+  text-transform: uppercase; /* --> Texte écris en majuscule (Text-transform = Définit la façon d'utiliser les lettres capitales pour le texte d'un élément, (uppercase = Met en majuscule le texte))*/
+}
+
+.titre-section  
+{
+  font-weight: bold; /* --> Texte en gras*/
+  color: #587465; /* --> Définir la couleur de mon/mes éléments*/
+}
+
+h4
+{
+  font-weight: bold; /* --> Texte en gras*/
+  color: #212121;
+}
+
+/*___________________________________________________________________PARTIE DE GAUCHE___________________________________________________________________*/ 
+
+img 
+{
+  border: 3px solid #a04f0c;
+  border-radius: 50%;
+  height: 100%
+}
+
+.partie-gauche 
+{
+  color: #212121; /* --> */
+  background: #f7913c; /* --> */
+  display: flex; /* --> */
+  flex-direction: column; /* --> */
+  width: 30%; /* --> */
+  text-align: center; /* --> */
+}
+
+
+.partie-gauche h3 
+{
+  background-color: #212121; /* --> */
+  color: #f7913c; /* --> */
+  padding:5px;
+}
+
+.contact-infos {
+    margin-bottom: 15px;
+}
+
+.contact p 
+{
+  margin: 0px 0px 0px 40px;
+  text-align: left; /* --> Texte a gauche*/
+}
+
+.contact-soulign
+{
+  text-decoration: underline; /* --> Souligne*/
+  font-weight: bold; /* --> Texte en gras*/
+}
+
+.a-propos p
+{
+  text-align: justify; /* --> Définit l'alignement horizontal de mon texte (cad : Met mon texte en justifié)*/
+  margin-left: 40px; /* --> Définit la marge exterieur à gauche de mon texte*/
+  margin-right: 40px;/* --> Définit la marge exterieur à droite de mon texte*/
+}
+
+.loisirs li
+{
+  border: 2px solid #212121; /* --> Définit la taille des traits des cercles + la résolution des cercles + la couleur des cercles*/
+  border-radius: 50%; /* --> Définit l'intensité des cercles*/
+  color: #212121; /* --> Définit la couleur des mes icones*/
+  padding: 3rem; /* --> Définit la grosseur de mes cercles*/
+  width: 4rem; /* --> Définit la largeur de mes cercles*/
+  height: 4rem; /* --> définit la hauteur de mes cercles*/
+}
+
+ul
+{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+/*___________________________________________________________________PARTIE DE DROITE___________________________________________________________________*/  
+
+.partie-droite 
+{
+  width: 70%; 
+  margin-left: 20px;
+}
+
+.nom span 
+{
+  color: #f7913c; /* --> */
+}
+
+.nom 
+{
+  font-size: 6rem; /* --> */
+  margin-bottom: 0; /* --> */
+  padding-bottom: 0; /* --> */
+}
+
+.taille-exp
+{
+  font-size: 2rem;
+}
+
+h5
+{
+  color: #f7913c; /* --> */
+}
+
+.titre-section 
+{
+  color: black;
+}
+
+.poste span 
+{
+  border-bottom: 2px solid #f7913c; /* --> */
+}
+
+.poste 
+{
+  margin-top: 0; /* --> */
+  margin-bottom: 6rem; /* --> */
+}
+
+/* section formation et experience */
+
+.formation .titre-section,.experience .titre-section,footer .titre-section 
+{
+  border-bottom: 2px solid #f7913c; /* Créer une ligne continue en orange--> */
+  padding-bottom: 2rem; /* --> */
+}
+
+.formation .titre-section i,.experience .titre-section i,footer .titre-section i 
+{
+  margin-right: 4rem; /* --> */
+}
+
+.formation1, .experience1
+{
+  display: flex; /* --> */
+  flex-direction: row; /* --> */
+}
+
+.formation, .experience, .recommandation
+{
+  padding: 0px 10px 0 10px;
+}
+
+.date
+{
+  width: 25%; /* --> */
+  display: flex; /* --> */
+  flex-direction: row; /* --> */
+  align-items: baseline; /* --> */
+}
+
+.date p 
+{
+  margin-left: 1.5rem; /* --> */
+}
+
+.diplome 
+{
+  width: 75%; /* --> */
+}
+
+.partie-droite i 
+{
+  color: #f7913c; /* --> */
+}
+
+.justify-text
+{
+  text-align: justify;
+  margin-right: 50px;
+}
+
+/* Footer - Recommandation */
+
+.reco 
+{
+  display: flex; /* --> */
+  flex-direction: row; /* --> */
+}
+
+.reco1, .reco2 
+{
+  width: 50%; /* --> */
+}
+
+.icon i 
+{
+  transition: 0.9s;
+}
+
+.icon i:hover
+{
+  color: white;
+  background-color: #212121;
+}
+
+.icon
+{
+  padding-left: 0px
+}
+
+
+/*____________________________________________________RESPONSIVE_________________________________________________*/
+
+
+@media screen and (min-width: 980px) 
+{
+  .image-droite 
+  {
+    display: none; /* --> */
+  }
+}
+
+
+@media only screen and (max-width: 979px) 
+{
+  .blocpage 
+  {
+    flex-direction: column; /* --> */
+  }
+
+  .image-poulpe 
+  {
+    display: none; /* --> */
+  }
+
+  .partie-gauche
+  {
+    width: 100%; /* --> */
+    margin-top: 185px;
+  }
+
+  .image-droite 
+  {
+      width: auto;
+      height: auto;
+      float: right;
+      margin: 0 15px 0 0;
+  }
+
+  .header 
+  {
+      margin-top: 5px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+  }
+
+  .partie-droite 
+  {
+      width: 100%;
+      margin: 0;
+  }
+    
+    
+  .nom 
+  {
+      width: auto;
+      margin-left: 10px;
+  }
+    
+  .poste 
+  {
+      width: auto;
+      margin-left: 10px;
+  }
+    
+  .formation, .experience, .recommandation 
+  {
+      padding: 0px 10px 0 10px;
+  }
+    
+  .loisirs 
+  {
+      padding-bottom: 10px;
+  }
+
+@media only screen and (max-width: 711px) 
+{
+    .partie-gauche
+    {
+      width: 100%; /* --> */
+      margin-top: 220px;
+    }
+    
+    .image-droite 
+    {
+      margin: 25px 25px 0 0;
+    }
+
+    .diplome
+    {
+      margin-left: 60px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 540px) 
+{
+    .image-droite 
+    {
+        margin-left: auto;
+        margin-right: auto;
+        float: unset
+    }
+    
+    .partie-gauche
+    {
+      margin-top: 330px;
+    }
+    
+    .nom 
+    {
+      margin-top: 15px;
+    }
+
+    .experience1
+    {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .diplome p
+    {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h4
+    {
+      text-align: center;
+    }
+
+    h5
+    {
+      text-align: center;
+    }
+}
+
+@media only screen and (max-width: 517px) 
+{
+    .nom 
+    {
+      font-size: 5rem;
+    }
+
+    .reco1
+    {
+      font-size: 13px;
+    }
+
+    .reco2
+    {
+      font-size: 13px;
+    }
+
+    .image-droite
+    {
+      text-align: center;
+    }
+
+    .formation
+    {
+      text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 417px) /*mettre la date et la ville au dessus de mon bloc diplome + réduire taille de police dans recommandation*/
+{
+    .nom 
+    {
+       font-size: 4rem;
+    }
+
+    .reco1
+    {
+      font-size: 10px;
+    }
+
+    .reco2
+    {
+      font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 336px) /*mettre la date et la ville au dessus de mon bloc diplome + réduire taille de police dans recommandation*/
+{
+    .nom 
+    {
+      font-size: 3rem;
+    }
+    
+    .poste 
+    {
+      font-size: 2rem;
+    }
+
+    .reco1
+    {
+      font-size: 8px;
+    }
+
+    .reco2
+    {
+      font-size: 8px;
+    }
+}
